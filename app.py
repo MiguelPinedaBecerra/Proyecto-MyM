@@ -10,11 +10,17 @@ def index():
 def pcausa():
     return render_template("inicio.html")
 
+@app.route("/tablas")
+def pecausa():
+    return render_template("tablas.html")
 
+@app.route("/comidas")
+def awowo():
+    return render_template("comidas.html")
 
-
-
-
+@app.route("/recetas")
+def awiwi():
+    return render_template("recetas.html")
 
 
 
