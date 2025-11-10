@@ -1,8 +1,55 @@
-<div class="form-floating mb-3">
-  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-  <label for="floatingInput">Email address</label>
-</div>
-<div class="form-floating">
-  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-  <label for="floatingPassword">Password</label>
-</div>
+{%extends 'base.html'%}
+{%block contenido%}
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" style="background-color: rgb(118, 236, 118);">
+    <img src="static/img/8775e415-bf26-4673-82a7-e520b045e726-removebg-preview.png" width="80px" height="80px">
+    <a class="navbar-brand" href="#">NutriApp</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="templates/base.html">inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tablas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">comidas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">recetas</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav><br><br>
+<center>
+ <h1>Inicio De Secion</h1>
+    <table border="1">
+        <fieldset>
+        <div class="container">
+        <h2>Inicio de Secion</h2>
+        <div class="underline"></div>
+        </div>
+        <form>
+        <input type="text" placeholder="nombre" style="width: 300px; height: 35px;"><br><br>
+        <input type="text" placeholder="apellidos" style="width: 300px; height: 35px;"><br><br>
+        <button style="color: rgb(0, 0, 0); background-color: rgb(145, 255, 145);" >Iniciar Secion</button><br>
+        <p>¿No tienes Cuenta?</p>
+    </fieldset>
+    </form>
+    </table>
+</center>
+<br><br>
+
+
+<footer>
+<h1 style="background-color: dimgray;">Esta pagina fue hecha por alumnos de cetis</h1>
+<p>srtrgtsg</p>
+
+</footer>
+
+
+{% endblock %}
