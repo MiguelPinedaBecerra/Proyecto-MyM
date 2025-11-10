@@ -22,6 +22,9 @@ def awowo():
 def awiwi():
     return render_template("recetas.html")
 
+@app.route("/iniciodesecion")
+def awewe():
+    return render_template("iniciodesecion.html")
 
 
 
