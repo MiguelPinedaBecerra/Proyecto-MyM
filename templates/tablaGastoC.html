@@ -1,0 +1,29 @@
+{%extends 'base.html'%}
+{%block contenido%}
+<center>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h1 class="card-title">Gasto De Calorias</h1>
+    <h6 class="card-subtitulo">determina tus calorias gastadas</h6>
+    <p>sexo</p>
+    <input type="radio" name="Sexo">Masculino
+    <input type="radio" name="Sexo">Femenino
+    <p>edad</p>
+    <input type="number" placeholder="edad" style="width: 300px; height: 35px;">
+    <p>altura (cm)</p>
+    <input type="number" placeholder="Altura" style="width: 300px; height: 35px;">
+    <p>peso (kg)</p>
+    <input type="number" placeholder="Peso" style="width: 300px; height: 35px;">
+    <p>Nivel de actividad fisica</p>
+    <select style="width: 300px; height: 35px;">
+        <option value="">poco o ningun ejercicio</option>
+        <option value="">ejercicio ligero (1-3 dias ala semana)<option>
+        <option value="">ejercicio moderado (3-5 dias ala semana)</option>
+        <option value="">ejercicio fuerte (6-7 dias ala semana)</option>
+        <option valie="">ejercicio muy fuerte (dos veces al dia de entrenamiento)</option>
+        </select>
+  </div>
+</div>
+</center>
+
+{% endblock %}

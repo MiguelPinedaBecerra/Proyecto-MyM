@@ -26,6 +26,9 @@ def awiwi():
 def awewe():
     return render_template("iniciodesecion.html")
 
+@app.route("/Tablaimc")
+def imc():
+    return render_template("tablaIMC.html")
 
 
 if __name__ == '__main__':

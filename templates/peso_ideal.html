@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+{%block contenido%}
+<center>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h1 class="card-title">Tabla del peso corporal ideal</h1>
+    <h6 class="card-subtitulo">determina tu peso corporal ideal</h6>
+    <p>sexo</p>
+    <input type="radio" name="Sexo">Masculino
+    <input type="radio" name="Sexo">Femenino
+    <p>edad(años)</p>
+    <input type="number" placeholder="Años" style="width: 300px; height: 35px;">
+    <p>altura (cm)</p>
+    <input type="number" placeholder="Altura" style="width: 300px; height: 35px;">
+  </div>
+</div>
+</center>
+
+{% endblock %}
