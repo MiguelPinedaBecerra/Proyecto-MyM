@@ -3,9 +3,19 @@
 <center>
 <h1>Tipos De Tablas</h1>
 
-
-
-
+<div class="card" style="width: 18rem;">
+  <img src="static/img/comida3.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h1>Tablas</h1>
+    <p class="card-text">escoje la tabla que quieras</p>
+    <a href="{{url_for('tablaIMC')}}" class="card-link">Calculadora de indice de masa corporal (IMC)</a><br>
+    <a href="{{url_for('tablaTMB')}}" class="card-link"> Calculadora de Tasa Metabólica Basal (TMB).</a><br>
+    <a href="{{url_for('tablaGastoC')}}" class="card-link"> Calculadora de Gasto Calórico Total (GCT)</a><br>
+    <a href="{{url_for('peso_ideal')}}" class="card-link">Calculadora de Peso Corporal Ideal</a><br>
+    <a href="{{url_for('tablaMacroN')}}" class="card-link">Calculadora de Macronutrientes</a><br>
+    <a href="{{url_for('TablarecetasPlatos')}}" class="card-link">Analizador de Recetas o Platos</a><br>
+  </div>
+</div>
 
 </center>
 {% endblock %}

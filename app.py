@@ -30,6 +30,26 @@ def awewe():
 def imc():
     return render_template("tablaIMC.html")
 
+@app.route("/Tablatmb")
+def imc():
+    return render_template("tablaTMB.html")
+
+@app.route("/TablaGastoc")
+def imc():
+    return render_template("tablaGastoC.html")
+
+@app.route("/pesoideal")
+def imc():
+    return render_template("peso_ideal.html")
+
+@app.route("/Tablamacron")
+def imc():
+    return render_template("tablaMacroN.html")
+
+@app.route("/TablaRecetasP")
+def imc():
+    return render_template("tablarecetasPLatos.html")
+
 
 if __name__ == '__main__':
     app.run(debug=True)
