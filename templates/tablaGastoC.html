@@ -1,5 +1,38 @@
 {%extends 'base.html'%}
 {%block contenido%}
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" style="background-color: rgb(118, 236, 118);">
+    <img src="static/img/8775e415-bf26-4673-82a7-e520b045e726-removebg-preview.png" width="80px" height="80px">
+    <a class="navbar-brand" href="#">NutriApp</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{url_for('inicio')}}">inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{url_for('index')}}">inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('tablas')}}">Tablas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('comidas')}}">comidas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('recetas')}}">recetas</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('inicioS')}}">inicio de Secion</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
 <center>
 <div class="card" style="width: 18rem;">
   <div class="card-body">
