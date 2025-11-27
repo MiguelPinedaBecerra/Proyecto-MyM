@@ -38,9 +38,70 @@ def email_existe(email);
         print(f"error verificando email: {e}")
         return False
 
+def regstrar_usuario(nombre, email, password, telefono):
+    try:
+        cursor = mysql.connection.cursor()
+        
+        hashed_password = generate_password_hash(password)
+        
+        cursor.execute('''
+            INSERT INTO users (nombre, email, password, telefono)
+VALUES (%s, %s, %s, %s,)
+''' (nombre, email, hashed_pasword, telefono))
 
 
+mysql.connection.commit()
+return True, "usuario registrado exitosamente"
 
+
+@app.route('/', methods=['GET', 'POST'])
+def inicio():
+    nombre = session.get("nombre")
+    return render_template('inicio.html', nombre=nombre)
+    
+
+@app.route('/registro', methods=['GET, 'POST']
+def registro():
+    if reques.method == 'POST':
+    
+    nombre = request.form.get('nombre')
+    apellido = request.form.get('apellido')
+    dia = request.form.get('dia')
+    mes = request.form.get('mes')
+    año = request.form.get('año')
+    genero = request.form.get('genero')
+    email = request.form.get('exampleInputPassword1')
+    password = request.form.get('examplepassword')
+    actividad = request.form.get('niveldeactividad')
+    peso = request.form.get('peso')
+    altura = request.form.get('altura')
+    
+if email in usuarios:
+    flash("El correo ya esta registrado. intenta iniciar secion")
+    return redirect('/iniciar_secion')
+    
+usuarios[email] = {
+    "nombre": nombre,
+    "nombre": apellido,
+    "nombre": f"{dia}/{mes}/{año}",
+    "nombre": genero,
+    "password": password,
+    "actividad": actividad,
+    "peso": peso,
+    "altura": altura,
+    
+}
+
+
+with open(USUARIOS_FILE, "w") as f:
+    json.dump(usuarios, f, indent=4)
+    
+session["usuario"] = email
+session["nombre"] = nombre
+session["genero"] = genero
+session["actividad"] = actividad
+session["peso"] = peso
+session["altura"] = altura
 
 @app.route("/")
 def index():
